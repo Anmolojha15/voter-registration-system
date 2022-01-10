@@ -1,0 +1,58 @@
+<html>
+<head>
+
+<style type="text/css">
+
+#header
+{
+background-color:pink;
+color:black;
+text-Align:center;
+}
+</style>
+</head>
+<body>
+<header id="header">
+<h2>Login Form</h2>
+<img src="img_avatar2.png"align=center></img>
+<hr>
+<hr>
+<hr>
+<tr>
+<p>For New Registration<a href="form.html"> click here </a></p>
+
+<form name="loginForm" method="post" action="login.php">
+<td>Username:</td>
+<td><input type="text" size=25 name="userid"></td>
+</tr>
+
+<tr>
+<td>Password:</td>
+<td><input type="Password" size=25 name="pwd"></td>
+</tr>
+
+<tr>
+<td ><input type="Reset"></td>
+<td><input type="submit" onclick="return check(this.form)" value="Check">
+<a href="b.html">Login</a></td>
+</tr>
+
+</table>
+</form>
+<script language="javascript">
+function check(form)
+{
+
+if(form.userid.value == "anmol" && form.pwd.value == "anmol")
+{
+	return true;
+}
+else
+{
+	alert("Error Password or Username")
+	return false;
+}
+}
+</script>
+</body>
+</html>
